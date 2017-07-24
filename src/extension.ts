@@ -14,11 +14,23 @@ export function activate(context: vscode.ExtensionContext) {
     // The command has been defined in the package.json file
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
-    let disposable = vscode.commands.registerCommand('extension.sayHello', () => {
+    let disposable = vscode.commands.registerCommand('extension.poplink', () => {
         // The code you place here will be executed every time your command is executed
 
-        // Display a message box to the user
-        vscode.window.showInformationMessage('Hello World!');
+        var editor = vscode.window.activeTextEditor;
+        if (!editor) {
+            return; // No open text editor
+        }
+
+        let path = editor.document.fileName;
+
+        // Convert filename to URL
+        let url=path.replace('c:\\repo\\drivers\\windows-driver-docs-pr\\','https://docs.microsoft.com/windows-hardware/drivers/');
+        url=url.replace('\\','/')
+        url=url.replace('.md','')
+
+        vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(url))
+
     });
 
     context.subscriptions.push(disposable);
