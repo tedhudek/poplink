@@ -1,4 +1,4 @@
-# Poplink
+# popLink
 
 Many modern publishing platforms build Markdown into HTML for publication on a website.  In such a platform, it can be useful to open the rendered web page while editing the Markdown source file.
 
@@ -12,46 +12,30 @@ If you have any requirements or dependencies, add a section describing those and
 
 Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-For example:
+For example, you would like popLink to convert local paths like `C:\repo\drivers\windows-driver-docs-pr\develop\getting-started-with-universal-drivers.md` to `https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers`.  To do so, go into user settings in VS Code and add:
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
+* ``: enable/disable this extension
 * `myExtension.thing`: set to `blah` to do something
 
-## Known Issues
+* `popLink.localBasePath`: "c:\\repo\\drivers\\windows-driver-docs-pr\\",
+* `popLink.remoteBasePath`:"https://docs.microsoft.com/windows-hardware/drivers/"
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+The extension replaces the front end of the local path with the URL base you provide, changes backslashes to forward slashes, removes the `.md` suffix, and presto change-o you have a URL.
+
+We recommend binding the command to a hotkey.  Press F1 and choose `Preferences: Open Keyboard Shortcuts File` and add a block like this:
+
+```
+ { "key": "f10", 
+  "command": "extension.poplink",
+ "when": "editorFocus" },
+ ```
+ 
+**Pro Tip**: Use the `Preferences: Open Keyboard Shortcuts` search bar to find a free hotkey.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+Created for the Microsoft Hackathon 2017.
 
 ### 1.0.0
 
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Initial release.
