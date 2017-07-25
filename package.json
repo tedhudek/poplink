@@ -53,5 +53,6 @@
         "type": "git",
         "url": "https://github.com/tedhudek/poplink.git"
     },
+    "icon": "images/bolt.png",
     "homepage": "https://github.com/tedhudek/poplink/blob/master/README.md"
 }
