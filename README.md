@@ -23,7 +23,7 @@ To configure popLink to handle such a mapping, go into user settings and specify
 
 Note the double backslash required on the local path.
 
-We recommend binding the command to a hotkey.  Press F1 and choose `Preferences: Open Keyboard Shortcuts File` and add a block like this:
+We recommend binding the `poplink` command to a hotkey.  Press F1 and choose `Preferences: Open Keyboard Shortcuts File` and add a block like this:
 
 ```
  { "key": "f10", 
