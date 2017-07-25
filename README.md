@@ -1,6 +1,6 @@
 # poplink README
 
-This is the README for your extension "poplink". After writing up a brief description, we recommend including the following sections.
+This is the README for the extension "poplink".
 
 ## Features
 
