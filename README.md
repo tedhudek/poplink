@@ -1,16 +1,8 @@
-# poplink README
+# Poplink
 
-This is the README for the extension "poplink".
+Many modern publishing platforms build Markdown into HTML for publication on a website.  In such a platform, it can be useful to open the rendered web page while editing the Markdown source file.
 
-## Features
-
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Poplink converts the file path of the currently opened file into an expected URL and then opens the target page in the default web browser.
 
 ## Requirements
 

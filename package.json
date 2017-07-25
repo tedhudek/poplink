@@ -18,7 +18,23 @@
         "commands": [{
             "command": "extension.poplink",
             "title": "poplink"
-        }]
+        }],
+        "configuration": {
+            "type": "object",
+            "title": "poplink configuration",
+            "properties": {
+                "popLink.localBasePath": {
+                    "type": "string",
+                    "default": "c:\\repo\\drivers\\windows-driver-docs-pr\\",
+                    "description": "Specifies portion of local path to remove."
+                },
+                "popLink.remoteBasePath": {
+                    "type": "string",
+                    "default": "https://docs.microsoft.com/windows-hardware/drivers/",
+                    "description": "Specifies front part of URL to add."
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "tsc -p ./",
@@ -32,5 +48,10 @@
         "mocha": "^2.3.3",
         "@types/node": "^6.0.40",
         "@types/mocha": "^2.2.32"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tedhudek/poplink.git"
+    },
+    "homepage": "https://github.com/tedhudek/poplink/blob/master/README.md"
 }
