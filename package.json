@@ -25,12 +25,12 @@
             "properties": {
                 "popLink.localBasePath": {
                     "type": "string",
-                    "default": "c:\\repo\\drivers\\windows-driver-docs-pr\\",
+                    "default": false,
                     "description": "Specifies portion of local path to remove."
                 },
                 "popLink.remoteBasePath": {
                     "type": "string",
-                    "default": "https://docs.microsoft.com/windows-hardware/drivers/",
+                    "default": false,
                     "description": "Specifies front part of URL to add."
                 }
             }
