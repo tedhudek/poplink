@@ -18,8 +18,10 @@ Basically, you want to remove everything before the `develop` folder and replace
 
 To configure popLink to handle such a mapping, go into user settings and specify:
 
-* `popLink.localBasePath`: "c:\\repo\\drivers\\windows-driver-docs-pr\\",
-* `popLink.remoteBasePath`:"https://docs.microsoft.com/windows-hardware/drivers/"
+```
+popLink.localBasePath: "c:\\repo\\drivers\\windows-driver-docs-pr\\",
+popLink.remoteBasePath:"https://docs.microsoft.com/windows-hardware/drivers/"
+```
 
 Note the double backslash required on the local path.
 
