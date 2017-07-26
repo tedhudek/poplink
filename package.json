@@ -2,7 +2,7 @@
     "name": "poplink",
     "displayName": "poplink",
     "description": "Opens webpage corresponding to a md file.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "tedhudek",
     "engines": {
         "vscode": "^1.14.0"
@@ -15,10 +15,12 @@
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.poplink",
-            "title": "poplink"
-        }],
+        "commands": [
+            {
+                "command": "extension.poplink",
+                "title": "poplink"
+            }
+        ],
         "configuration": {
             "type": "object",
             "title": "poplink configuration",
