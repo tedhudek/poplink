@@ -54,5 +54,9 @@
         "url": "https://github.com/tedhudek/poplink.git"
     },
     "icon": "images/bolt.png",
+    "galleryBanner": {
+        "color": "#0000FF",
+        "theme": "dark"
+    },
     "homepage": "https://github.com/tedhudek/poplink/blob/master/README.md"
 }
