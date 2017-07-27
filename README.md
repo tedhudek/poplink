@@ -1,16 +1,16 @@
 # popLink extension for VS Code
 
-Many modern publishing platforms build Markdown into HTML for publication on a website.  In such a platform, it can be useful to open the rendered web page while editing the Markdown source file.
+Many modern publishing platforms build Markdown into HTML for publication on a website. In such a platform, it can be useful to open the rendered web page while editing the Markdown source file.
 
 Poplink converts the file path of the currently opened file into an expected URL and then opens the target page in the default web browser.
 
 ## Extension Settings
 
-For example, you would like to convert local paths like:
+For example, say you want to convert local paths like:
 
 `C:\repo\drivers\windows-driver-docs-pr\develop\getting-started-with-universal-drivers.md`
 
-To:
+...to...
 
 `https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers`
 
@@ -23,9 +23,9 @@ To configure popLink to handle such a mapping, go into user settings and specify
 "popLink.remoteBasePath": "https://docs.microsoft.com/windows-hardware/drivers/"
 ```
 
-Note the double backslash required on the local path.
+Note the double backslashes required in the local path.
 
-We recommend binding the `poplink` command to a hotkey.  Press F1 and choose `Preferences: Open Keyboard Shortcuts File` and add a block like this:
+We recommend binding the `poplink` command to a hotkey. Press F1 and choose `Preferences: Open Keyboard Shortcuts File` and add a block like this:
 
 ```
  { "key": "f10", 
@@ -39,6 +39,4 @@ We recommend binding the `poplink` command to a hotkey.  Press F1 and choose `Pr
 
 Created for the Microsoft Hackathon 2017.
 
-### 1.0.0
 
-Initial release.
