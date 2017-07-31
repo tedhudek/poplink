@@ -25,18 +25,28 @@ export function activate(context: vscode.ExtensionContext) {
 
         let path = editor.document.fileName;
 
+        console.log("path: " + path);
+
         let localBasePath = <string>vscode.workspace.getConfiguration('popLink').get('localBasePath');
+
+        console.log("localBasePath: " + localBasePath);
+        
         let remoteBasePath = <string>vscode.workspace.getConfiguration('popLink').get('remoteBasePath');
+
+        console.log("remoteBasePath: " + remoteBasePath); 
 
         //vscode.window.showInformationMessage('Local path is: ' + localBasePath);
 
         // Convert filename to URL
         //let url=path.replace('c:\\repo\\drivers\\windows-driver-docs-pr\\','https://docs.microsoft.com/windows-hardware/drivers/');
         //let url=path.replace(localBasePath,'https://docs.microsoft.com/windows-hardware/drivers/');
+        
         let url=path.replace(localBasePath, remoteBasePath);
 
         url=url.replace('\\','/')
         url=url.replace('.md','')
+
+        console.log("url: " + url); 
 
         vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(url))
 
