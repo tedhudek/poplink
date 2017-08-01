@@ -2,7 +2,7 @@
     "name": "poplink",
     "displayName": "poplink",
     "description": "Takes the path of the currently open Markdown file and opens the expected URL for the corresponding rendered page.",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "tedhudek",
     "engines": {
         "vscode": "^1.14.0"

@@ -6,15 +6,15 @@ Poplink converts the file path of the currently opened file into an expected URL
 
 ## Extension Settings
 
-For example, say you want to convert local paths like:
+For example, say that local paths in your repo that look like this:
 
 `C:\repo\drivers\windows-driver-docs-pr\develop\getting-started-with-universal-drivers.md`
 
-...to...
+...publish out to...
 
 `https://docs.microsoft.com/windows-hardware/drivers/develop/getting-started-with-universal-drivers`
 
-Basically, you want to remove everything before the `develop` folder and replace it with the required URL base path.
+To convert from the local path to the URL, we need to remove everything before the `develop` folder and replace it with the URL base path.
 
 To configure popLink to handle such a mapping, go into user settings and specify:
 
@@ -23,7 +23,7 @@ To configure popLink to handle such a mapping, go into user settings and specify
 "popLink.remoteBasePath": "https://docs.microsoft.com/windows-hardware/drivers/"
 ```
 
-Note the double backslashes required in the local path.
+**Note**: The local base path is case sensitive.  Ensure that casing in the local path value matches the casing of the actual path.  Also note the double backslashes required in the local path.
 
 We recommend binding the `poplink` command to a hotkey. Press F1 and choose `Preferences: Open Keyboard Shortcuts File` and add a block like this:
 
