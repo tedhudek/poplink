@@ -1,64 +1,69 @@
 {
-    "name": "poplink",
-    "displayName": "poplink",
-    "description": "Opens the webpage corresponding to a Markdown file.",
-    "version": "0.0.7",
-    "publisher": "tedhudek",
-    "engines": {
-        "vscode": "^1.14.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.poplink"
-    ],
-    "main": "./out/src/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.poplink",
-                "title": "poplink"
-            }
-        ],
-        "configuration": {
-            "type": "object",
-            "title": "poplink configuration",
-            "properties": {
-                "popLink.localBasePath": {
-                    "type": "string",
-                    "default": false,
-                    "description": "Specifies portion of local path to remove."
-                },
-                "popLink.remoteBasePath": {
-                    "type": "string",
-                    "default": false,
-                    "description": "Specifies front part of URL to add."
-                }
-            }
-        }
-    },
-    "scripts": {
-        "vscode:prepublish": "tsc -p ./",
-        "compile": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/tedhudek/poplink.git"
-    },
-    "icon": "images/bolt.png",
-    "galleryBanner": {
-        "color": "#0000FF",
-        "theme": "dark"
-    },
-    "homepage": "https://github.com/tedhudek/poplink/blob/master/README.md"
+	"name": "poplink",
+	"displayName": "poplink",
+	"description": "Opens the webpage corresponding to a Markdown file.",
+	"version": "0.0.8",
+	"publisher": "tedhudek",
+	"engines": {
+		"vscode": "^1.14.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.poplink"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.poplink",
+				"title": "poplink"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "poplink configuration",
+			"properties": {
+				"popLink.localBasePath": {
+					"type": "string",
+					"default": false,
+					"description": "Specifies portion of local path to remove."
+				},
+				"popLink.remoteBasePath": {
+					"type": "string",
+					"default": false,
+					"description": "Specifies front part of URL to add."
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tedhudek/poplink.git"
+	},
+	"icon": "images/bolt.png",
+	"galleryBanner": {
+		"color": "#0000FF",
+		"theme": "dark"
+	},
+	"homepage": "https://github.com/tedhudek/poplink/blob/master/README.md",
+	"__metadata": {
+		"id": "1925b104-4280-447c-8063-72cd836a171a",
+		"publisherDisplayName": "tedhudek",
+		"publisherId": "daaf75c0-172c-4b20-9c20-e05f266c575a"
+	}
 }
