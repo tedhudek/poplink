@@ -21,9 +21,11 @@ function activate(context) {
         let path = editor.document.fileName;
         console.log("path: " + path);
         let localBasePath = vscode.workspace.getConfiguration('popLink').get('localBasePath');
+        let localRefPath = vscode.workspace.getConfiguration('popLink').get('localRefPath');
         console.log("localBasePath: " + localBasePath);
         console.log("localRefPath: " + localRefPath);
         let remoteBasePath = vscode.workspace.getConfiguration('popLink').get('remoteBasePath');
+        let remoteRefPath = vscode.workspace.getConfiguration('popLink').get('remoteRefPath');
         console.log("remoteBasePath: " + remoteBasePath);
         console.log("remoteRefPath: " + remoteRefPath);
         //vscode.window.showInformationMessage('Local path is: ' + localBasePath);
