@@ -33,6 +33,7 @@ function activate(context) {
         //let url=path.replace('c:\\repo\\drivers\\windows-driver-docs-pr\\','https://docs.microsoft.com/windows-hardware/drivers/');
         //let url=path.replace(localBasePath,'https://docs.microsoft.com/windows-hardware/drivers/');
         let url = path.replace(localBasePath, remoteBasePath);
+        url = url.replace(localRefPath, remoteRefPath);
         url = url.replace('\\', '/');
         url = url.replace('.md', '');
         console.log("url: " + url);
