@@ -30,10 +30,12 @@ export function activate(context: vscode.ExtensionContext) {
         let localBasePath = <string>vscode.workspace.getConfiguration('popLink').get('localBasePath');
 
         console.log("localBasePath: " + localBasePath);
+        console.log("localRefPath: " + localRefPath);
         
         let remoteBasePath = <string>vscode.workspace.getConfiguration('popLink').get('remoteBasePath');
 
         console.log("remoteBasePath: " + remoteBasePath); 
+        console.log("remoteRefPath: " + remoteRefPath); 
 
         //vscode.window.showInformationMessage('Local path is: ' + localBasePath);
 

@@ -21,16 +21,16 @@ function activate(context) {
         let path = editor.document.fileName;
         console.log("path: " + path);
         let localBasePath = vscode.workspace.getConfiguration('popLink').get('localBasePath');
-        let localRefPath = vscode.workspace.getConfiguration('popLink').get('localRefPath');
         console.log("localBasePath: " + localBasePath);
+        console.log("localRefPath: " + localRefPath);
         let remoteBasePath = vscode.workspace.getConfiguration('popLink').get('remoteBasePath');
-        let remoteRefPath = vscode.workspace.getConfiguration('popLink').get('remoteRefPath');
         console.log("remoteBasePath: " + remoteBasePath);
+        console.log("remoteRefPath: " + remoteRefPath);
         //vscode.window.showInformationMessage('Local path is: ' + localBasePath);
         // Convert filename to URL
         //let url=path.replace('c:\\repo\\drivers\\windows-driver-docs-pr\\','https://docs.microsoft.com/windows-hardware/drivers/');
+        //let url=path.replace(localBasePath,'https://docs.microsoft.com/windows-hardware/drivers/');
         let url = path.replace(localBasePath, remoteBasePath);
-        let url = path.replace(localRefPath, remoteRefPath);
         url = url.replace('\\', '/');
         url = url.replace('.md', '');
         console.log("url: " + url);
