@@ -46,7 +46,7 @@ export function activate(context: vscode.ExtensionContext) {
         //let url=path.replace(localBasePath,'https://docs.microsoft.com/windows-hardware/drivers/');
         
         let url=path.replace(localBasePath, remoteBasePath);
-        url=url.replace(localRefPath, remoteRefPath);
+        url=url.replace(localRefPath, remoteRefPath)
 
         url=url.replace('\\','/')
         url=url.replace('.md','')
