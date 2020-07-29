@@ -2,7 +2,7 @@
 	"name": "poplink",
 	"displayName": "poplink",
 	"description": "Opens the webpage corresponding to a Markdown file.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"publisher": "tedhudek",
 	"engines": {
 		"vscode": "^1.14.0"
