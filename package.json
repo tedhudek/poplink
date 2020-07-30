@@ -38,12 +38,12 @@
 				"popLink.localRefPath": {
 					"type": "string",
 					"default": false,
-					"description": "Specifies portion of secondary local path to remove."
+					"description": "Optional - specifies portion of secondary local path to remove."
 				},
 				"popLink.remoteRefPath": {
 					"type": "string",
 					"default": false,
-					"description": "Specifies front part of secondary URL to add."
+					"description": "Optional - specifies front part of secondary URL to add."
 				}
 			}
 		}
