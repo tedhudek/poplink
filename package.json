@@ -1,6 +1,6 @@
 {
-	"name": "poplink",
-	"displayName": "poplink",
+	"name": "Poplink",
+	"displayName": "Poplink",
 	"description": "Opens the webpage corresponding to a Markdown file.",
 	"version": "0.3.1",
 	"publisher": "tedhudek",
@@ -18,12 +18,12 @@
 		"commands": [
 			{
 				"command": "extension.poplink",
-				"title": "poplink"
+				"title": "Poplink"
 			}
 		],
 		"configuration": {
 			"type": "object",
-			"title": "poplink",
+			"title": "Poplink",
 			"properties": {
 				"popLink.localBasePath": {
 					"type": "string",
