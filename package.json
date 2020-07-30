@@ -23,7 +23,7 @@
 		],
 		"configuration": {
 			"type": "object",
-			"title": "poplink configuration",
+			"title": "poplink",
 			"properties": {
 				"popLink.localBasePath": {
 					"type": "string",
@@ -34,6 +34,16 @@
 					"type": "string",
 					"default": false,
 					"description": "Specifies front part of URL to add."
+				},
+				"popLink.localRefPath": {
+					"type": "string",
+					"default": false,
+					"description": "Specifies portion of secondary local path to remove."
+				},
+				"popLink.remoteRefPath": {
+					"type": "string",
+					"default": false,
+					"description": "Specifies front part of secondary URL to add."
 				}
 			}
 		}
